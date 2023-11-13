@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "poetry-test"
+name = "module1"
 version = "0.1.0"
 description = ""
 authors = ["Tomasz Rymkiewicz <kreha1@pm.me>"]
-packages = [{include = "poetry-test/module1"}]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pyyaml = "^6.0.1"
 
 
 [build-system]
