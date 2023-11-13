@@ -3,10 +3,11 @@ name = "poetry-test"
 version = "0.1.0"
 description = ""
 authors = ["Tomasz Rymkiewicz <kreha1@pm.me>"]
-packages = [{include = "poetry_test/module1"}]
+# packages = [{include = "poetry_test/module1"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+module1 = { path = "poetry_test/module1" }
 
 
 [build-system]
