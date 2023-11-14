@@ -1,20 +1,16 @@
 [project]
-name = "poetry_test"
-description = ""
+name = "hello"
 version = "0.1.0"
+description = "A Hatch project with namespaced submodules"
+authors = [
+    { name = "Tomasz Rymkiewicz", email = "kreha1@pm.me" }
+]
+requires-python = ">=3.7"
 
+# Defining optional dependencies
 [project.optional-dependencies]
-full = [
-    "module1",
-    "module2"
-]
-module1 = [
-    "module1"
-]
-module2 = [
-    "module2"
-]
-
+module_a = ["pyyaml"]
+module_b = ["fastapi"]
 
 [build-system]
 requires = ["hatchling"]

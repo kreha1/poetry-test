@@ -1,7 +1,0 @@
-[project]
-name = "module2"
-version = "0.1.0"
-
-dependencies = [
-    "fastapi^0.104.1"
-]
