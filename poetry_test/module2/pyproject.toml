@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Tomasz Rymkiewicz <kreha1@pm.me>"]
 packages = [
-    { include = "*" }
+    { include = "module2", from = "." },
 ]
 
 [tool.poetry.dependencies]
