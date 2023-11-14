@@ -1,19 +1,21 @@
-[tool.poetry]
-name = "poetry-test"
-version = "0.1.0"
+[project]
+name = "poetry_test"
 description = ""
-authors = ["Tomasz Rymkiewicz <kreha1@pm.me>"]
+version = "0.1.0"
 
-[tool.poetry.dependencies]
-python = "^3.11"
-module1 = { path = "poetry_test/module1" }
-module2 = { path = "poetry_test/module2" }
+[project.optional-dependencies]
+full = [
+    "module1",
+    "module2"
+]
+module1 = [
+    "module1"
+]
+module2 = [
+    "module2"
+]
 
-[tool.poetry.extras]
-full = ["module1", "module2"]
-module1 = ["module1"]
-module2 = ["module2"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

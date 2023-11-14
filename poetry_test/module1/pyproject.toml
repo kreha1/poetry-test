@@ -1,17 +1,7 @@
-[tool.poetry]
+[project]
 name = "module1"
 version = "0.1.0"
-description = ""
-authors = ["Tomasz Rymkiewicz <kreha1@pm.me>"]
-packages = [
-       { include = "module1", from = "." },
+
+dependencies = [
+    "pyyaml^6.0.1"
 ]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-pyyaml = "^6.0.1"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"

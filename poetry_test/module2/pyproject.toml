@@ -1,17 +1,7 @@
-[tool.poetry]
+[project]
 name = "module2"
 version = "0.1.0"
-description = ""
-authors = ["Tomasz Rymkiewicz <kreha1@pm.me>"]
-packages = [
-    { include = "module2", from = "." },
+
+dependencies = [
+    "fastapi^0.104.1"
 ]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-fastapi = "^0.104.1"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
